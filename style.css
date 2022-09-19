@@ -1,0 +1,54 @@
+:root{
+    --background-url: url("./background.jpg")
+}
+body {
+  background-image: var(--background-url);
+  background-size: cover;
+}
+.search-header {
+  margin: 30vh 0 50px 0;
+  font-size: min(80px, 10vw);
+  cursor: pointer;
+}
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#query {
+  width: 100%;
+  max-width: 90vw;
+}
+.button {
+}
+.second-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#button-search {
+  width: min(200px, 90vw);
+}
+#button-time {
+  margin: 10px 10px;
+}
+#button-feeling-lucky {
+  margin: 10px 10px;
+}
+#time {
+  /* visibility: hidden; */
+}
+#searchResults {
+  /* visibility: hidden; */
+}
+.search-container {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 767px) {
+    #query{
+        max-width: 50vw;
+    }
+}
